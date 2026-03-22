@@ -30,6 +30,35 @@ A PowerApps Component Framework (PCF) control that renders Markdown content in m
 | Customization Prefix | `jenssch` |
 | Choice Value Prefix | 73720 |
 
+## Changing the Publisher
+
+If you need to deploy under a different publisher, update the `<Publisher>` section in [Solution/src/Other/Solution.xml](Solution/src/Other/Solution.xml):
+
+```xml
+<Publisher>
+  <UniqueName>yourpublisher</UniqueName>
+  <LocalizedNames>
+    <LocalizedName description="Your Publisher Name" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <CustomizationPrefix>yourprefix</CustomizationPrefix>
+  <CustomizationOptionValuePrefix>12345</CustomizationOptionValuePrefix>
+</Publisher>
+```
+
+The values must exactly match an existing publisher in your target environment:
+
+| Field | Where to find it |
+|---|---|
+| **UniqueName** | Power Platform Admin → Settings → Publishers → **Name** (read-only field) |
+| **LocalizedName** | Publishers → **Display name** |
+| **CustomizationPrefix** | Publishers → **Prefix** |
+| **CustomizationOptionValuePrefix** | Publishers → **Choice value prefix** |
+
+If the `UniqueName` doesn't match an existing publisher, Power Platform will create a new one on import.
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (LTS)
