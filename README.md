@@ -2,7 +2,7 @@
 
 A PowerApps Component Framework (PCF) control that renders Markdown content in model-driven apps with support for Mermaid diagrams, inline editing, and file download.
 
-**[Download Solution](Solution/bin/Debug/MarkdownControl_solution.zip)**
+**[Download Solution](https://github.com/jenschristianschroder/pcfMarkdownViewer/raw/main/Solution/bin/Debug/MarkdownControl_solution.zip)**
 
 ## Features
 
