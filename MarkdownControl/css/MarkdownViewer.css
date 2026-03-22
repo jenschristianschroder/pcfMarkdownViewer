@@ -1,0 +1,219 @@
+.markdown-wrapper {
+    position: relative;
+    text-align: left;
+}
+
+.markdown-toolbar {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 1;
+    display: flex;
+    gap: 4px;
+}
+
+.markdown-toolbar-btn {
+    background: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    padding: 4px 6px;
+    cursor: pointer;
+    color: #586069;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.markdown-toolbar-btn:hover {
+    background: #f1f3f5;
+    color: #24292e;
+    border-color: #c8ccd0;
+}
+
+.markdown-editor {
+    width: 100%;
+    min-height: 300px;
+    padding: 12px;
+    padding-top: 32px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    resize: vertical;
+    box-sizing: border-box;
+    tab-size: 4;
+}
+
+.markdown-editor:focus {
+    outline: none;
+    border-color: #0366d6;
+    box-shadow: 0 0 0 2px rgba(3, 102, 214, 0.2);
+}
+
+.markdown-viewer {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 8px;
+    padding-top: 32px;
+    text-align: left;
+}
+
+.markdown-viewer h1,
+.markdown-viewer h2,
+.markdown-viewer h3,
+.markdown-viewer h4,
+.markdown-viewer h5,
+.markdown-viewer h6 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.markdown-viewer h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+.markdown-viewer h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+.markdown-viewer h3 {
+    font-size: 1.25em;
+}
+
+.markdown-viewer h4 {
+    font-size: 1em;
+}
+
+.markdown-viewer p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.markdown-viewer a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.markdown-viewer a:hover {
+    text-decoration: underline;
+}
+
+.markdown-viewer ul,
+.markdown-viewer ol {
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.markdown-viewer li + li {
+    margin-top: 0.25em;
+}
+
+.markdown-viewer blockquote {
+    margin: 0 0 1em 0;
+    padding: 0.5em 1em;
+    color: #6a737d;
+    border-left: 4px solid #dfe2e5;
+    background-color: #f6f8fa;
+}
+
+.markdown-viewer blockquote > :first-child {
+    margin-top: 0;
+}
+
+.markdown-viewer blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+.markdown-viewer code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.markdown-viewer pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.markdown-viewer pre code {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 100%;
+}
+
+.markdown-viewer table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 1em;
+    width: auto;
+    overflow: auto;
+}
+
+.markdown-viewer table th,
+.markdown-viewer table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.markdown-viewer table th {
+    font-weight: 600;
+    background-color: #f6f8fa;
+}
+
+.markdown-viewer table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+.markdown-viewer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.markdown-viewer hr {
+    height: 2px;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #e1e4e8;
+    border: 0;
+}
+
+.markdown-viewer strong {
+    font-weight: 600;
+}
+
+.mermaid-diagram {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.mermaid-diagram svg {
+    max-width: 100%;
+    height: auto;
+}
