@@ -112,3 +112,9 @@ Solution/                 # Power Platform solution project
   MarkdownControl_solution.cdsproj
   src/Other/Solution.xml
 ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Third-party licenses for [marked](https://github.com/markedjs/marked) and [mermaid](https://github.com/mermaid-js/mermaid) are included in [THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES).
