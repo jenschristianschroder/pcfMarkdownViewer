@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="MarkdownControl" constructor="MarkdownControl" version="0.0.1" display-name-key="MarkdownControl" description-key="MarkdownControl description" control-type="standard" >
+  <control namespace="MarkdownControl" constructor="MarkdownControl" version="0.0.2" display-name-key="MarkdownControl" description-key="MarkdownControl description" control-type="standard" >
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -18,6 +18,7 @@
     <property name="fileName" display-name-key="File Name" description-key="The filename for downloading the markdown file (without extension)" of-type="SingleLine.Text" usage="bound" required="false" />
     <property name="showEditButton" display-name-key="Show Edit Button" description-key="Show or hide the edit/view toggle button" of-type="TwoOptions" usage="input" required="false" />
     <property name="showDownloadButton" display-name-key="Show Download Button" description-key="Show or hide the download button" of-type="TwoOptions" usage="input" required="false" />
+    <property name="showPlaceholder" display-name-key="Show Placeholder" description-key="Show or hide the placeholder text when the markdown content is empty" of-type="TwoOptions" usage="input" required="false" />
     <resources>
       <code path="index.ts" order="1"/>
       <css path="css/MarkdownViewer.css" order="1" />
