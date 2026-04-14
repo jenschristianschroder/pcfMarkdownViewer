@@ -195,7 +195,8 @@ export class MarkdownControl
     }
 
     private renderMarkdown(context: ComponentFramework.Context<IInputs>): void {
-        this._currentMarkdown = context.parameters.markdownContent.raw || SAMPLE_MARKDOWN;
+        const showPlaceholder = context.parameters.showPlaceholder?.raw !== false;
+        this._currentMarkdown = context.parameters.markdownContent.raw || (showPlaceholder ? SAMPLE_MARKDOWN : "");
         this._fileName = context.parameters.fileName?.raw || "document";
 
         const showEdit = context.parameters.showEditButton?.raw !== false;

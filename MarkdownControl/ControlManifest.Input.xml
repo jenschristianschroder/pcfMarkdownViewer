@@ -18,6 +18,7 @@
     <property name="fileName" display-name-key="File Name" description-key="The filename for downloading the markdown file (without extension)" of-type="SingleLine.Text" usage="bound" required="false" />
     <property name="showEditButton" display-name-key="Show Edit Button" description-key="Show or hide the edit/view toggle button" of-type="TwoOptions" usage="input" required="false" />
     <property name="showDownloadButton" display-name-key="Show Download Button" description-key="Show or hide the download button" of-type="TwoOptions" usage="input" required="false" />
+    <property name="showPlaceholder" display-name-key="Show Placeholder" description-key="Show or hide the placeholder text when the markdown content is empty" of-type="TwoOptions" usage="input" required="false" />
     <resources>
       <code path="index.ts" order="1"/>
       <css path="css/MarkdownViewer.css" order="1" />
