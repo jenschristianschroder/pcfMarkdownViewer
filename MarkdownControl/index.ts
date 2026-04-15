@@ -96,6 +96,7 @@ export class MarkdownControl
     constructor() {
         this._marked = new Marked({
             async: false,
+            breaks: true,
         });
     }
 
